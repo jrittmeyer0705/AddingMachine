@@ -1,44 +1,70 @@
-package cse360assignment02;
-
-public class AddingMachine {
-  private int total;
-  /**
-   * AddingMachine constructor takes in no parameters  
-   * returns nothing
-   */
-  public AddingMachine () {
-    total = 0;  // not needed - included for clarity
-  }
+package cse360assignment02; 
+ 
+public class AddingMachine {  
+private int total;
+private String history;
+/**
+ * AddingMachine constructor takes in no parameters  
+ * returns nothing
+ */
+public AddingMachine () {
+	
+	total = 0; // not needed - included for clarity  
+	history="0";
+}     
+/**
+ * getTotal takes in no parameters  
+ * returns total
+ */
+ public int getTotal () {
+	 
+	 return total;   
+ }    
  /**
-  * gettotal takes in no parameters  
-  * returns 0
+  * add takes in int value as a parameter  
+  * returns nothing but adds the value to toString
   */
-  public int getTotal () {
-    return 0;
-  }
+ public void add (int value) {
+	 
+	 total=total+value;
+	 history=history+" + "+Integer.toString(value);
+ } 
+ /**
+  * subtract takes in an int value as parameter  
+  * returns nothing but subtracts the value and adds it to toString
+  */
+ public void subtract (int value) {
+	 
+	 total=total-value;
+	 history=history+" - "+Integer.toString(value);
+ } 
+ /**
+  * toString method takes in no parameters 
+  * returns history
+  */
+  public String toString ()  {
+	  
+	  return history;   
+  } 
   /**
-   * Add takes in int value  
-   * returns nothing
+   * clear method takes in no parameters  
+   * uses 
    */
-  public void add (int value) {
+  public void clear()  {
+	  
+	  history="";
   }
+  
   /**
-   * subtract takes in int value 
-   * returns nothing
+   * Main method takes in string[] args  
+   * Initializes adding machine and performs all calculations
    */
-  public void subtract (int value) {
+  public static void main(String[] args) {
+	  
+	  AddingMachine myCalculator =new AddingMachine();
+	  myCalculator.add(4);
+	  myCalculator.subtract(2);
+	  myCalculator.add(1000);
+	  System.out.println(myCalculator.toString());
   }
-  /**
-   * ToString takes in no parameters  
-   * returns nothing as of right now
-   */
-  public String toString () {
-    return "";
-  }
-  /**
-   * clear takes in no parameters  
-   * returns nothing
-   */
-  public void clear() {
-  }
-}
+} 
