@@ -48,7 +48,7 @@ public AddingMachine () {
   } 
   /**
    * clear method takes in no parameters  
-   * uses 
+   * 
    */
   public void clear()  {
 	  
@@ -64,7 +64,7 @@ public AddingMachine () {
 	  AddingMachine myCalculator =new AddingMachine();
 	  myCalculator.add(4);
 	  myCalculator.subtract(2);
-	  myCalculator.add(1000);
+	  myCalculator.add(5);
 	  System.out.println(myCalculator.toString());
   }
 } 
