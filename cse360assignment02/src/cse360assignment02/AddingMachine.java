@@ -57,7 +57,7 @@ public AddingMachine () {
   
   /**
    * Main method takes in string[] args  
-   * Initializes adding machine and performs all calculations
+   * Initializes AddingMachine and performs all calculations
    */
   public static void main(String[] args) {
 	  
