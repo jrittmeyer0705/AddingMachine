@@ -9,8 +9,8 @@ public class AddingMachine {
 private int total;
 private String history;
 /**
-* The AddingMachine method has contents in it that just enhance clarity in the program
-* total=0 and history = "0" for clarity
+* default constructor that initializes total to zero
+* initializes history string variable "0"
 * @param Unused
 * @return Nothing
 */
@@ -22,14 +22,14 @@ public AddingMachine () {
 /**
 * This method has the total that is used throughout the program.
 * @param Unused
-* @return int getTotal
+* @return current int value of variable total
 */
  public int getTotal () {
 	 
 	 return total;   
  }    
  /**
- * This method adds the total to the value. Also adds the integer value in the history string which gets printed out by main in this program.
+ * This method adds the total to the value and append + sign and value in string variable history
  * @param int value, this is the only parameter in this method.
  * @return Nothing
  */
@@ -39,7 +39,7 @@ public AddingMachine () {
 	 history=history+" + "+Integer.toString(value);
  } 
  /**
- * This method subtracts total from value. Also subtracts the integer value in the history string which gets printed out by main in this program.
+ * This method subtracts total from value and appends - sign and value in string variable history
  * @param int value, this is the only parameter in this method
  * @return Nothing
  */
@@ -51,14 +51,14 @@ public AddingMachine () {
  /**
  * This method contains the toString method to represent any object as a string
  * @param Unused
- * @return String that contains history
+ * @return history string
  */
   public String toString ()  {
 	  
 	  return history;   
   } 
   /**
-  * Clear method, has no effect on programs output
+  * clears all the history and sets history variable to "0"
   * @param Unused
   * @return Nothing
   */
