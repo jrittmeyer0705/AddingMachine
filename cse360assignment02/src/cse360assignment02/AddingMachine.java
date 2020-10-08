@@ -57,8 +57,8 @@ public AddingMachine () {
   
   /**
    * Main method takes in string[] args  
-   * Initializes AddingMachine and performs all calculations
-   */
+   * Initializes AddingMachine and performs all calculations prints out myCalculator.toString
+   */ 
   public static void main(String[] args) {
 	  
 	  AddingMachine myCalculator =new AddingMachine();
