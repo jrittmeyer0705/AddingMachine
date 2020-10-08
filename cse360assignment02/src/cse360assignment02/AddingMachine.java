@@ -1,7 +1,6 @@
 package cse360assignment02; 
 /**
 * The AddingMachine keeps track of calculations performed by the myCalculator object in this program.
-*
 * @author  Justin Rittmeyer
 * @version 1.0
 * @since   2020-10-7 
@@ -10,7 +9,7 @@ public class AddingMachine {
 private int total;
 private String history;
 /**
-* This method has contents in it that just enhance clarity in the program
+* The AddingMachine method has contents in it that just enhance clarity in the program
 * total=0 and history = "0" for clarity
 * @param Unused
 * @return Nothing
